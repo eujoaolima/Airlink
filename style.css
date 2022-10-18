@@ -230,9 +230,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
-.title-roadmap {
+.title.roadmap {
     color:rgb(155, 110, 253);
     padding: 100px;
     position: absolute;
@@ -246,6 +247,13 @@ button {
     height: 200px;
     bottom: 210px;
     cursor: pointer;
+}
+
+.card img {
+    min-width: 200px;
+    min-height: 100px;
+    width: 350px;
+    height: 200px;
 }
 
 .card .flip {
@@ -342,4 +350,58 @@ footer .boxs h2 {
     position: relative;
     top: 100px;
     left: 1100px;
+}
+
+/* Página Responsiva */
+
+@media (min-width: 1920px) {
+    body {
+        width: 60%;
+    }
+
+    .home p {
+        font-size: 35px;
+    }
+
+    .scroll .btn-about-us {
+        top: 90%;
+    }
+
+    .scroll .btn-home {
+        bottom: 45%;
+        width: 60%;
+    }
+
+    .title.roadmap {
+        top: 120%;
+        font-size: 30px;
+        text-shadow: none;
+        text-transform: none;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .card {
+        flex-direction: column;
+        display: flex;
+        width: 350px;
+        height: 200px;
+        margin-right: 10px;
+        transform: translate(-6%, 0);
+        padding: 0;
+    }
+
+    .card:hover {
+        z-index: 1000;
+    }
+
+    footer {
+        top: 160%;
+        width: 60%;
+    }
+
+    footer img {
+        transform: translate(-150%, -10%);
+    }
+
+
 }
