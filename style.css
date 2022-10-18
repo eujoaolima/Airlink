@@ -235,9 +235,13 @@ button {
 
 .title.roadmap {
     color:rgb(155, 110, 253);
+    font-size: 35px;
+    font-family: 'Manrope', sans-serif;
+    text-transform: none;
+    text-shadow: none;
     padding: 100px;
     position: absolute;
-    top: 200%;
+    top: 205%;
 }
 
 .card {
@@ -402,6 +406,4 @@ footer .boxs h2 {
     footer img {
         transform: translate(-150%, -10%);
     }
-
-
 }
